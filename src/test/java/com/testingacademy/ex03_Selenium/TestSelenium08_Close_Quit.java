@@ -9,7 +9,7 @@ public class TestSelenium08_Close_Quit {
 
     @Description("Open the URL and navigate to")
     @Test
-    public void test_Selenium01() throws InterruptedException {
+    public void test_Selenium08() throws InterruptedException {
 
         WebDriver driver = new ChromeDriver();
         driver.get("https://www.google.com");

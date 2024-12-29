@@ -7,7 +7,7 @@ public class TestSelenium04_WebDriverHierarchy {
 
     @Description("Open the app.vwo.com and get the Title")
     @Test
-    public void test_Selenium01() {
+    public void test_Selenium04() {
 
         //------------WebDriver Hierarchy----------
         // SearchContext(I) has fn (2) --> WebDriver (10) --> RemoteWebDriver (10) --> ChromiumDriver (25) --> EdgeDriver (45)

@@ -8,7 +8,7 @@ public class TestSelenium03 {
 
     @Description("Open the app.vwo.com and get the Title")
     @Test
-    public void test_Selenium01() {
+    public void test_Selenium03() {
 
         // In Selenium 3.14 - older version
         // You need to setup the Driver (browser)

@@ -10,7 +10,7 @@ public class TestSelenium05_VerifyTitle {
 
     @Description("Open the URL")
     @Test
-    public void test_Selenium01() {
+    public void test_Selenium05() {
 
         WebDriver driver = new ChromeDriver();
         driver.get("https://www.google.com");

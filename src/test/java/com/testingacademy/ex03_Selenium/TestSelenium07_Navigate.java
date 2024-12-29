@@ -9,7 +9,7 @@ public class TestSelenium07_Navigate {
 
     @Description("Open the URL and navigate to")
     @Test
-    public void test_Selenium01(){
+    public void test_Selenium07(){
 
         WebDriver driver = new ChromeDriver();
         driver.get("https://www.google.com");

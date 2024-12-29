@@ -10,7 +10,7 @@ public class TestSelenium06_KatalonFlow {
 
     @Description("Open the URL")
     @Test
-    public void test_Selenium01() throws Exception {
+    public void test_Selenium06() throws Exception {
 
         WebDriver driver = new ChromeDriver();
         driver.get("https://katalon-demo-cura.herokuapp.com/");
