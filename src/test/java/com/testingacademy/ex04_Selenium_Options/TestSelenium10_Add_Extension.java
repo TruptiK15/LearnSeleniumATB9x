@@ -1,9 +1,7 @@
-package com.testingacademy.ex04_Selenium_Options_Locators;
+package com.testingacademy.ex04_Selenium_Options;
 
 import io.qameta.allure.Description;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.edge.EdgeOptions;
 import org.testng.annotations.Test;
@@ -26,7 +24,7 @@ public class TestSelenium10_Add_Extension {
         edgeoptions.addExtensions(new File("src/test/java/com/testingacademy/ex04_Selenium_Options_Locators/adblocker.crx"));
 
         WebDriver driver = new EdgeDriver(edgeoptions);
-        driver.get("https://www.google.com");
+        driver.get("https://www.youtube.com/watch?v=BwTSxsAqlEc");
         //Thread.sleep(5000);
        // driver.quit();
     }
