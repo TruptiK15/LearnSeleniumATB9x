@@ -11,7 +11,7 @@ public class Practice_Sort_array {
         Arrays.sort(numbers);
         System.out.println("Sorted Array: ");
         for (int number : numbers) {
-            System.out.print(number + " ");
+            System.out.println(number + " ");
         }
     }
 }

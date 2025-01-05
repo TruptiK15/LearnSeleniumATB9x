@@ -47,9 +47,9 @@ public class TestSelenium14_Make_Appointment_Task {
         System.out.println("Current URL is: " + driver.getCurrentUrl());
 
         //Verify the URL
-        String currentURL = driver.getCurrentUrl();
+        String actualURL = driver.getCurrentUrl();
         String expectedURL = "https://katalon-demo-cura.herokuapp.com/#appointment";
-        if (currentURL.equals(expectedURL)){
+        if (actualURL.equals(expectedURL)){
             System.out.println("Make Appointment Page is displayed");
         }
         else{

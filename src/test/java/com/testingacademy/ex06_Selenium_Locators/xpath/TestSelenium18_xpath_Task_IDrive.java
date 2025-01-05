@@ -7,7 +7,7 @@ import org.openqa.selenium.edge.EdgeOptions;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-public class TestSelenium16_IDriveTaskxpath {
+public class TestSelenium18_xpath_Task_IDrive {
 
     @Description("Login to IDrive 360 website and verify free trail message is visible")
     @Test
@@ -47,7 +47,7 @@ public class TestSelenium16_IDriveTaskxpath {
             System.out.println("Free trial message is visible, Test passed!");
         }
         else {
-            System.out.println("Free trial message is not visible, Test failed! \nExpected: " + expectedText + ",but got: " + actualText);
+            System.out.println("Free trial message is not visible, Test failed!");
         }
         Thread.sleep(2000);
          driver.quit();
