@@ -12,7 +12,7 @@ public class TestSelenium21_WebTables {
     public void Test_Selenium21() throws InterruptedException {
 
         WebDriver driver = new EdgeDriver();
-        driver.get("https://www.idrive360.com/enterprise/login");
+        driver.get("https://awesomeqa.com/webtable.html");
         Thread.sleep(2000);
 
         // 1. Print all the data(elements) in the table
@@ -21,28 +21,27 @@ public class TestSelenium21_WebTables {
         // Dynamic tr and td
         //table[@id="customers"]/tbody/tr[5]/td[2]/preceding-sibling::td
         //table[@id="customers"]/tbody/tr[5]/td[2]/following-sibling::td
+        //xpath - //table[@id="customers"]/tbody/tr[i]/td[j]
 
-        //xpath - //table[@id="customers"]/tbody/tr[
-        // i
-        // ]/td[j]
+        // 1. Print all the data(elements) in the table
+        String first_part = "//table[@id=\"customers\"]/tbody/tr[";
+        String second_part = "]/td[";
+        String third_part = "]";
 
-        String st1 = "//table[@id=\"customers\"]/tbody/tr[";
-        String st2 = "]/td[";
-        String st3 = "]";
-
+        //Fetching Table
         int row = driver.findElements(By.xpath("//table[@id=\"customers\"]/tbody/tr")).size();
         int col = driver.findElements(By.xpath("//table[@id=\"customers\"]/tbody/tr[2]/td")).size();
 
-        for (int i=2; i<=row; i++ ){
-            for (int j=1; j<=col; j++){
-                String dynamic_path = st1+i+st2+j+st3;
-                //System.out.println(dynamic_path);
-                String data = driver.findElement(By.xpath(dynamic_path)).getText();
-                //System.out.println(data);
-                if (data.contains("Helen Bennett")){
-                    String country_Xpath = dynamic_path +"/following-sibling::td";
-                    String country_text = driver.findElement(By.xpath(country_Xpath)).getText();
-                    System.out.println("Helen Bennett is In - " + country_text);
+        for (int i = 2; i <= row; i++) {
+            for (int j = 1; j <= col; j++) {
+                String dynamicxpath = first_part + i + second_part + j + third_part;
+                String data = driver.findElement(By.xpath(dynamicxpath)).getText();
+                // Print all Table - System.out.println("Row " + (i - 1) + " column " + j + " : " + data);
+
+                if (data.contains("Helen Bennett")) {
+                    String country_xpath = dynamicxpath + "/following-sibling::td";
+                    String country = driver.findElement(By.xpath(country_xpath)).getText();
+                    System.out.println("Country of Helen Bennett is : " + country);
                 }
             }
         }

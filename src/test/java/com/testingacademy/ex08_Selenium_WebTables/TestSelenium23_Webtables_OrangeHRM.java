@@ -37,15 +37,15 @@ public class TestSelenium23_Webtables_OrangeHRM {
 
         for (int i = 1; i <= row; i++) {
             for (int j = 1; j <= col; j++) {
-                String dynamic_XPath = first_part + i + second_part + j + third_part;
+                String dynamicxpath = first_part + i + second_part + j + third_part;
                 //System.out.println(dynamic_XPath);
-                String data = driver.findElement(By.xpath(dynamic_XPath)).getText();
+                String data = driver.findElement(By.xpath(dynamicxpath)).getText();
                 //System.out.println(data);
 
-                if (data.contains("0182")) {
-                    String surname_xPath = dynamic_XPath + "/following-sibling::div";
-                    String surname = driver.findElement(By.xpath(surname_xPath)).getText();
-                    System.out.println(surname);
+                if (data.contains("0028")) {
+                    String name_xpath = dynamicxpath + "/following-sibling::div";
+                    String name = driver.findElement(By.xpath(name_xpath)).getText();
+                    System.out.println("Name: "+ name);
                 }
             }
         }
