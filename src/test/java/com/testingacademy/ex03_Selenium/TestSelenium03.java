@@ -12,6 +12,8 @@ public class TestSelenium03 {
 
         // In Selenium 3.14 - older version
         // You need to setup the Driver (browser)
+        //System.setProperty("webdriver.gecko.driver","/path/geckodriver");
+
         /*
          Firefox --> System.setProperty("webdriver.gecko.driver","/path/geckodriver.exe");
          Chrome --> System.setProperty("webdriver.chrome.driver","/path/chromeodriver.exe");
@@ -20,7 +22,7 @@ public class TestSelenium03 {
          IE --> System.setProperty("webdriver.ie.driver","/path/IEDriverServer.exe");
         */
 
-        //In Selenium 4.x
+        //In Selenium 4.x - new version
         //Selenium Manager - utility - which download the driver automatically
         //and start and stop itself
 
