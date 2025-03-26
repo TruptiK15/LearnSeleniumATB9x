@@ -12,10 +12,7 @@ public class TestSelenium09_Options {
     @Test
     public void test_Selenium09() throws InterruptedException {
 
-        //EdgeOptions, ChromeOptions, FirefoxOptions, SafariOptions
-        EdgeOptions edgeoptions = new EdgeOptions();
-
-        /* --- EdgeOptions -----
+           /* --- EdgeOptions -----
         - options to browsers
         - window - size
         - headless mode - there is no UI - advantage - Fast Execution
@@ -28,12 +25,15 @@ public class TestSelenium09_Options {
         - Localstorage, download?
          */
 
+        //EdgeOptions, ChromeOptions, FirefoxOptions, SafariOptions
+        EdgeOptions edgeoptions = new EdgeOptions();
+        edgeoptions.addArguments("--headless");
+
         // edgeoptions.addArguments("--window-size=1920,1080");
         // edgeoptions.addArguments("--window-size=1280,720");
-        //   edgeoptions.addArguments("--window-size=800,600");
-        //   edgeoptions.addArguments("--incognito");
-        //   edgeoptions.addArguments("--start-maximized");
-         edgeoptions.addArguments("--headless");
+        // edgeoptions.addArguments("--window-size=800,600");
+        // edgeoptions.addArguments("--incognito");
+        // edgeoptions.addArguments("--start-maximized");
 
         WebDriver driver = new EdgeDriver(edgeoptions);
         driver.get("https://www.google.com");

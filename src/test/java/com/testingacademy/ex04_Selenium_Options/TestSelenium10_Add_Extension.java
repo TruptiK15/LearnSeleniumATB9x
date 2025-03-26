@@ -21,7 +21,7 @@ public class TestSelenium10_Add_Extension {
 
         EdgeOptions edgeoptions = new EdgeOptions();
         edgeoptions.addArguments("--window-size=1920,1080");
-        edgeoptions.addExtensions(new File("src/test/java/com/testingacademy/ex04_Selenium_Options_Locators/adblocker.crx"));
+        //edgeoptions.addExtensions(new File("src/test/java/com/testingacademy/ex04_Selenium_Options_Locators/adblocker.crx"));
 
         WebDriver driver = new EdgeDriver(edgeoptions);
         driver.get("https://www.youtube.com/watch?v=BwTSxsAqlEc");
