@@ -23,8 +23,10 @@ public class TestSelenium25_SVG {
 
         driver.findElement(By.name("q")).sendKeys("macmini");
         List<WebElement> svgelements = driver.findElements(By.xpath("//*[local-name()=\"svg\"]"));
+        //List<WebElement> svgelements = driver.findElements(By.xpath("//*[name()=\"svg\"]"));
         svgelements.get(0).click();
 
+        Thread.sleep(2000);
         driver.quit();
     }
 }
