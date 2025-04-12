@@ -21,11 +21,15 @@ public class Test_ShadowDOM_01 {
 
         JavascriptExecutor js = (JavascriptExecutor) driver;
 
-        WebElement div_toScroll = driver.findElement(By.xpath("//div[@id='userName']"));
-        js.executeScript("arguments[0].scrollIntoView(true);",div_toScroll);
-        Thread.sleep(3000);
+        try {
+            WebElement div_toScroll = driver.findElement(By.xpath("//div[@id='userName']"));
+            js.executeScript("arguments[0].scrollIntoView(true);",div_toScroll);
+        } catch (Exception e) {
+            e.getMessage();
+        }
+        Thread.sleep(2000);
 
-        WebElement inputboxPizza = (WebElement) js.executeScript("return document.querySelector(\"div#userName\").shadowRoot.querySelector(\"div#app2\").shadowRoot.querySelector(\"input#pizza\");");
+        WebElement inputboxPizza = (WebElement) js.executeScript("return document.querySelector('div#userName').shadowRoot.querySelector('div#app2').shadowRoot.querySelector('input#pizza');");
         inputboxPizza.sendKeys("farmhouse");
 
     }
