@@ -13,11 +13,11 @@ public class Select_ex3 {
         driver.get("https://the-internet.herokuapp.com/dropdown");
 
         WebElement ddl = driver.findElement(By.id("dropdown"));
+        Select select = new Select(ddl);
+        select.selectByValue("2");
+        select.selectByIndex(1);
+        select.selectByVisibleText("Option 2");
 
-        Select ddloption = new Select(ddl);
-        //ddloption.selectByValue("2");
-        ddloption.selectByIndex(1);
-        //ddloption.selectByVisibleText("Option 2");
-        //driver.quit();
+        driver.quit();
     }
 }

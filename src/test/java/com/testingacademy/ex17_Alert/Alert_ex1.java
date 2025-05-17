@@ -21,7 +21,7 @@ public class Alert_ex1 {
         driver.manage().window().maximize();
 
         //1. Click for JS Alert - //button[@onclick="jsAlert()"]
-        WebElement jsAlert = driver.findElement(By.xpath("//button[@onclick=\"jsAlert()\"]"));
+        WebElement jsAlert = driver.findElement(By.xpath("//button[@onclick='jsAlert()']"));
         jsAlert.click();
         Alert alert = driver.switchTo().alert();
         Thread.sleep(2000);
@@ -34,11 +34,11 @@ public class Alert_ex1 {
         Thread.sleep(2000);
 
         //2. Click for JS Confirm - //button[@onclick="jsConfirm()"]
-        WebElement jsConfirm = driver.findElement(By.xpath("//button[@onclick=\"jsConfirm()\"]"));
+        WebElement jsConfirm = driver.findElement(By.xpath("//button[@onclick='jsConfirm()']"));
         jsConfirm.click();
         Alert alert1 = driver.switchTo().alert();
-        Thread.sleep(2000);
         System.out.println(alert1.getText());
+        Thread.sleep(2000);
         alert1.accept();
         //alert1.dismiss(); //Cancel
 
@@ -48,11 +48,10 @@ public class Alert_ex1 {
         Thread.sleep(2000);
 
         //3. Click for JS Prompt - //button[@onclick="jsPrompt()"]
-        WebElement jsPrompt = driver.findElement(By.xpath("//button[@onclick=\"jsPrompt()\"]"));
+        WebElement jsPrompt = driver.findElement(By.xpath("//button[@onclick='jsPrompt()']"));
         jsPrompt.click();
         Alert alert2 = driver.switchTo().alert();
         alert2.sendKeys("OK");
-        Thread.sleep(2000);
         alert2.accept();
         System.out.println("You entered: OK");
 

@@ -9,7 +9,7 @@ import java.util.List;
 
 import static org.openqa.selenium.support.locators.RelativeLocator.with;
 
-public class Practice_Relative_locator01 {
+public class Relative_ex1 {
 
     public static void main(String[] args) throws InterruptedException {
 
