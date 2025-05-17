@@ -1,4 +1,4 @@
-package com.testingacademy.ex08_Selenium_WebTables;
+package com.testingacademy.ex08_WebTables;
 
 import io.qameta.allure.Description;
 import org.openqa.selenium.By;
@@ -9,7 +9,7 @@ import org.testng.annotations.Test;
 
 import java.util.List;
 
-public class TestSelenium22_WebTables1 {
+public class Webtables_ex6 {
 
     @Test
     @Description("Print the country of 'Halen' in Webtable")

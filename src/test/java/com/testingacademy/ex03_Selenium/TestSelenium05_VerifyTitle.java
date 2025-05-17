@@ -24,6 +24,5 @@ public class TestSelenium05_VerifyTitle {
         Assert.assertEquals(driver.getTitle(),"Google");
         driver.close();
 
-
     }
 }

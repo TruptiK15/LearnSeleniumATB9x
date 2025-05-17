@@ -1,14 +1,23 @@
-package com.testingacademy.ex08_Selenium_WebTables;
+package com.testingacademy.ex08_WebTables;
+
+import io.qameta.allure.Description;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.edge.EdgeDriver;
+import org.testng.annotations.Test;
 
 import java.util.List;
 
-public class Practice_Webtables_find {
+public class Webtables_ex2_foreach {
 
-    public static void main(String[] args) throws InterruptedException {
+    //WebTables - Tables with rows and column representation
+    //Created with table Tag
+    //we have Body with th - header, tr - rows and td - columns
+
+    @Test
+    @Description("Find the WebTables")
+    public void Test_Selenium23() throws InterruptedException {
 
         WebDriver driver = new EdgeDriver();
         driver.manage().window().maximize();
@@ -24,18 +33,9 @@ public class Practice_Webtables_find {
             List<WebElement> cols = row.findElements(By.tagName("td"));
 
             for (WebElement col : cols) {
-                //Print all data in Table
-                //System.out.print(col.getText() + " | ");
-
-                if (col.getText().contains("Helen Bennett")){
-                    //print Country
-                    //String findCountry = col + "/following-sibling::td";
-                    //String countryText = col.findElement(By.xpath(findCountry)).getText();
-
-                    String countryText = cols.get(2).getText(); // 3rd column (0-based indexing)
-                    System.out.println("Country : " + countryText);
-                }
+                System.out.print(col.getText() + " | ");
             }
+            System.out.println();
         }
         driver.quit();
     }

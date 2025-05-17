@@ -7,7 +7,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.testng.annotations.Test;
 
-public class TestSelenium19_Advance_Xpath_Axes {
+public class Advance_Xpath_Axes {
     @Test
     @Description("Advance XPATH")
     public void Test_Selenium17() throws InterruptedException {

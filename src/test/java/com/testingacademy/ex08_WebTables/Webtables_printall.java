@@ -1,4 +1,4 @@
-package com.testingacademy.ex07_Advance_Locators.xpath;
+package com.testingacademy.ex08_WebTables;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -7,7 +7,7 @@ import org.openqa.selenium.edge.EdgeDriver;
 
 import java.util.List;
 
-public class TestSelenium21_Webtables_printall {
+public class Webtables_printall {
     public static void main(String[] args) throws InterruptedException {
 
         WebDriver driver = new EdgeDriver();

@@ -1,15 +1,13 @@
-package com.testingacademy.ex08_Selenium_WebTables;
+package com.testingacademy.ex08_WebTables;
 
-import io.qameta.allure.Description;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.edge.EdgeDriver;
-import org.testng.annotations.Test;
 
 import java.util.List;
 
-public class Practice_Webtables_OrangeHRM {
+public class Webtables_ex4_OrangeHRM {
 
     //WebTables - Tables with rows and column representation
     //Created with table Tag

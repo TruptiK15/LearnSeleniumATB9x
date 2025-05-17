@@ -1,13 +1,11 @@
-package com.testingacademy.ex08_Selenium_WebTables;
+package com.testingacademy.ex08_WebTables;
 
 import io.qameta.allure.Description;
 import org.openqa.selenium.*;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.testng.annotations.Test;
 
-import java.util.List;
-
-public class TestSelenium23_Webtables_OrangeHRM {
+public class Webtables_ex5_OrangeHRM {
 
     @Test
     @Description("Find the WebTables")

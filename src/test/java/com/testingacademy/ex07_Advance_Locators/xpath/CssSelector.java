@@ -3,13 +3,10 @@ package com.testingacademy.ex07_Advance_Locators.xpath;
 import io.qameta.allure.Description;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.testng.annotations.Test;
 
-import java.util.List;
-
-public class TestSelenium20_CssSelector {
+public class CssSelector {
     @Test
     @Description("Learning CssSelector")
     public void Test_Selenium20() throws InterruptedException {

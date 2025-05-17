@@ -1,11 +1,11 @@
-package com.testingacademy.ex07_Advance_Locators.xpath;
+package com.testingacademy.ex08_WebTables;
 
 import io.qameta.allure.Description;
 import org.openqa.selenium.*;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.testng.annotations.Test;
 
-public class TestSelenium21_WebTables {
+public class WebTables {
 
     @Test
     @Description("Find the WebTables")

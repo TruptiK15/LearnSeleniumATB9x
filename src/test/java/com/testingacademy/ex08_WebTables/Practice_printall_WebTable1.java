@@ -1,4 +1,4 @@
-package com.testingacademy.ex07_Advance_Locators.xpath;
+package com.testingacademy.ex08_WebTables;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
