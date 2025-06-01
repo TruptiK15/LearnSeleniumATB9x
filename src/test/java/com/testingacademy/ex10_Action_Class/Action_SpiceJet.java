@@ -2,7 +2,6 @@ package com.testingacademy.ex10_Action_Class;
 
 import io.qameta.allure.Description;
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.edge.EdgeOptions;
@@ -11,7 +10,7 @@ import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
-public class TestSelenium29_Action_SpiceJet {
+public class Action_SpiceJet {
     EdgeDriver driver;
 
     @BeforeTest

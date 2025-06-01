@@ -1,4 +1,4 @@
-package com.testingacademy.ex11_Action_Advance;
+package com.testingacademy.ex11_Drag_and_Drop;
 
 import io.qameta.allure.Description;
 import org.openqa.selenium.*;
@@ -6,7 +6,7 @@ import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.interactions.Actions;
 import org.testng.annotations.Test;
 
-public class TestSelenium33_Action_Drag_n_drop {
+public class Action_Drag_n_drop {
     @Test
     @Description("Verify Actions - Drag and Drop")
     public void Test_Selenium33() throws InterruptedException {

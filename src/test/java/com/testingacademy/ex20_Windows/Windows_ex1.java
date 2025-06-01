@@ -16,7 +16,6 @@ public class Windows_ex1 {
 
         //Windows
         //Switching within Tabs
-
         WebDriver driver = new ChromeDriver();
         driver.get("https://the-internet.herokuapp.com/windows");
         driver.manage().window().maximize();

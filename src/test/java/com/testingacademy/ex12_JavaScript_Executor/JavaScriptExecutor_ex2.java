@@ -4,7 +4,7 @@ import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-public class Test_JavaScriptExecutor_demo {
+public class JavaScriptExecutor_ex2 {
     public static void main(String[] args) throws InterruptedException {
 
         //Shadow Dom - element is hidden or its properties are enacapsulated from user

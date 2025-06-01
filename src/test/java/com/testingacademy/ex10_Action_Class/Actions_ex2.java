@@ -1,4 +1,4 @@
-package com.testingacademy.ex19_Actions;
+package com.testingacademy.ex10_Action_Class;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;

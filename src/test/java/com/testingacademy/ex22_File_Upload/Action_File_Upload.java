@@ -1,12 +1,11 @@
-package com.testingacademy.ex11_Action_Advance;
+package com.testingacademy.ex22_File_Upload;
 
 import io.qameta.allure.Description;
 import org.openqa.selenium.*;
 import org.openqa.selenium.edge.EdgeDriver;
-import org.openqa.selenium.edge.EdgeOptions;
 import org.testng.annotations.Test;
 
-public class TestSelenium31_Action_File_Upload {
+public class Action_File_Upload {
 
     @Test
     @Description("Action - File Upload")

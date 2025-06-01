@@ -1,4 +1,4 @@
-package com.testingacademy.ex23_Drag_and_Drop;
+package com.testingacademy.ex11_Drag_and_Drop;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -16,7 +16,7 @@ public class DragAndDrop_ex1 {
         WebElement from = driver.findElement(By.id("column-a"));
         WebElement to = driver.findElement(By.id("column-b"));
         Actions actions = new Actions(driver);
-        actions.dragAndDrop(from,to).perform();
+        actions.dragAndDrop(from,to).build().perform();
         //actions.clickAndHold(from).moveToElement(to).release(to).build().perform();
 
         Thread.sleep(3000);
